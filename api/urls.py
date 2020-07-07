@@ -9,4 +9,5 @@ urlpatterns = [
     path('user/', views.UserAPIView.as_view()),
     # path('login/', ObtainJSONWebToken.as_view()),
     path('login/', views.LoginAPIView.as_view()),
+    path('cps/', views.ComputerListAPIView.as_view()),
 ]

@@ -119,6 +119,9 @@ AUTH_USER_MODEL = "api.User"
 
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
+    # 搜索配置
+    # 一般不进行全局配置
+    # 'DEFAULT_FILTER_BACKENDS': "rest_framework.filters.SearchFilter",
 }
 
 JWT_AUTH = {
